@@ -1,0 +1,12 @@
+{
+  "navigationFallback": {
+    "rewrite": "/ccadmin/index.html",
+    "exclude": [
+      "/ccadmin/static/*",
+      "/ccadmin/images/*",
+      "/ccadmin/favicon.ico",
+      "/ccadmin/*.css",
+      "/ccadmin/*.js"
+    ]
+  }
+}
