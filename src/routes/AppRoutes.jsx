@@ -24,33 +24,33 @@ import ModifierGroupMaster from "../pages/Masters/ModifierGroup/ModifierGroupMas
 
 function AppRoutes() {
   return (
-    <Routes basename={"ccadmin"}>
-      <Route path="ccadmin" element={<LoginLayout />}>
-        <Route path="" element={<Login />}></Route>
-        <Route path="exp" element={<h1>Expenses</h1>}></Route>
-        <Route path="*" element={<h1>Not Found</h1>}></Route>
+    <Routes>
+      <Route path="/" element={<LoginLayout />}>
+        <Route index element={<Login />} />
+        <Route path="exp" element={<h1>Expenses</h1>} />
+        <Route path="*" element={<h1>Not Found</h1>} />
       </Route>
 
-      <Route path="ccadmin/App" element={<AppLayout />}>
-        <Route path="ItemType" element={<ItemTypeMaster />}></Route>
-        <Route path="ItemSize" element={<ItemSizeMaster />}></Route>
-        <Route path="Item" element={<ItemMaster />}></Route>
-        <Route path="ItemPrice" element={<ItemPriceMaster />}></Route>
-        <Route path="ItemPackage" element={<ItemPackageMaster />}></Route>
-        <Route path="ItemBase" element={<Itembase />}></Route>
-        <Route path="Topping" element={<ToppingMaster />}></Route>
-        <Route path="Spicy" element={<SpicyMaster />}></Route>
-        <Route path="Offers" element={<Offers />}></Route>
-        <Route path="Storeclose" element={<StoreClose />}></Route>
-        <Route path="Modifiers" element={<ModifierMaster />}></Route>
-        <Route path="ModifierGroup" element={<ModifierGroupMaster />}></Route>
-        <Route path="*" element={<h1>App Not Found</h1>}></Route>
-        <Route path="Orderlist" element={<OrderList />}></Route>
-        <Route path="Outofstock" element={<OutOfStock />}></Route>
-        <Route path="Itemoftheday" element={<IODMaster />}></Route>
-        <Route path="Addpromotion" element={<AddpromotionMaster />}></Route>
-        <Route path="Itemdelay" element={<ItemdelayMaster />}></Route>
-        <Route path="Blocklist" element={<BlockList />}></Route>
+      <Route path="/App" element={<AppLayout />}>
+        <Route path="ItemType" element={<ItemTypeMaster />} />
+        <Route path="ItemSize" element={<ItemSizeMaster />} />
+        <Route path="Item" element={<ItemMaster />} />
+        <Route path="ItemPrice" element={<ItemPriceMaster />} />
+        <Route path="ItemPackage" element={<ItemPackageMaster />} />
+        <Route path="ItemBase" element={<Itembase />} />
+        <Route path="Topping" element={<ToppingMaster />} />
+        <Route path="Spicy" element={<SpicyMaster />} />
+        <Route path="Offers" element={<Offers />} />
+        <Route path="Storeclose" element={<StoreClose />} />
+        <Route path="Modifiers" element={<ModifierMaster />} />
+        <Route path="ModifierGroup" element={<ModifierGroupMaster />} />
+        <Route path="Orderlist" element={<OrderList />} />
+        <Route path="Outofstock" element={<OutOfStock />} />
+        <Route path="Itemoftheday" element={<IODMaster />} />
+        <Route path="Addpromotion" element={<AddpromotionMaster />} />
+        <Route path="Itemdelay" element={<ItemdelayMaster />} />
+        <Route path="Blocklist" element={<BlockList />} />
+        <Route path="*" element={<h1>App Not Found</h1>} />
       </Route>
     </Routes>
   );

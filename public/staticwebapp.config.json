@@ -1,6 +1,6 @@
 {
   "navigationFallback": {
-    "rewrite": "/ccadmin/index.html",
+    "rewrite": "/index.html",
     "exclude": [
       "/ccadmin/static/*",
       "/ccadmin/images/*",
