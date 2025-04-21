@@ -1,9 +1,12 @@
 {
-    "routes": [
-        {
-            "route": "/ccadmin/*",
-            "serve": "/ccadmin/index.html",
-            "statusCode": 200
-        }
-    ]
+    "navigationFallback": {
+        "rewrite": "/index.html",
+        "exclude": [
+            "/static/*",
+            "/images/*",
+            "/favicon.ico",
+            "/*.css",
+            "/*.js"
+        ]
+    }
 }
