@@ -44,7 +44,7 @@ jobs:
           action: "upload"
           app_location: "ccadmin"  # Points to our created directory
           output_location: ""  # Leave empty since we copied files
-          routes_location: "routes.json"
+          routes_location: "./routes.json"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
