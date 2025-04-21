@@ -1,0 +1,14 @@
+{
+    "routes": [
+        {
+            "route": "/ccadmin/*",
+            "serve": "/ccadmin/index.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/*",
+            "redirect": "/ccadmin",
+            "statusCode": 301
+        }
+    ]
+}
