@@ -1,0 +1,19 @@
+{
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 100,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "13.232.219.190",
+      "port": 5432,
+      "askForPassword": true,
+      "driver": "PostgreSQL",
+      "username": "postgres",
+      "database": "vsRestaurant",
+      "name": "Restaurant",
+      "group": "Postgresql"
+    }
+  ],
+  "editor.mouseWheelZoom": false,
+  "editor.formatOnSave": true
+}

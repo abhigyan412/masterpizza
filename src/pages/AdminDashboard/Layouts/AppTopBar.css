@@ -1,0 +1,15 @@
+.navbar-container {
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  top: 0;
+  position: sticky;
+}
+
+.flex-right {
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
